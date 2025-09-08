@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artnation Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #ff4e50, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #f9d423, #ff6f61);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+    }
+
+    header img {
+      width: 160px;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 64px;
+      margin: 10px 0;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 22px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #ff4e50;
+    }
+
+    section p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Section Images */
+    .section-img {
+      display: block;
+      max-width: 250px;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .cta {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 15px 40px;
+      background: #e63946;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: #d62828;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.9);
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+      <a href="https://ibb.co/nqGHr5Jv"><img src="https://i.ibb.co/nqGHr5Jv/Untitled.png" alt="Untitled" border="0"></a>
+    <h1>Artnation</h1>
+    <p>Bringing the joy of art to children through donations and volunteering 🌟</p>
+  </header>
+
+  <!-- About Section -->
+  <section>
+    <h2>About the Project</h2>
+    <img class="section-img" src="https://media.istockphoto.com/id/636761588/photo/used-brushes-on-an-artists-palette-of-colorful-oil-paint.jpg?s=612x612&w=0&k=20&c=38YQxVJVWnNfvGtlb7AXMx_ItyHZMEdmWenNkWNQ91g=" alt="Children Painting">
+    <p>
+      Artnation is a community-driven project where students, artists, and volunteers 
+      come together to support children by providing art supplies and creative workshops. 
+      We believe art inspires imagination, confidence, and learning.
+    </p>
+  </section>
+
+  <!-- Why It Matters Section -->
+  <section>
+    <h2>Why It Matters</h2>
+    <img class="section-img" src="https://media.istockphoto.com/id/1280505753/vector/creative-workshop-for-children.jpg?s=1024x1024&w=is&k=20&c=zPZPYnz4AEqax-B-70AUqPG9VxMkiffQ4pt5dbaAaww=" alt="Child Drawing">
+    <p>
+      Many children lack access to basic art materials. By donating supplies and time, 
+      you help them develop creativity, emotional well-being, and self-expression.
+    </p>
+  </section>
+
+  <!-- Get Involved Section -->
+  <section>
+    <h2>Get Involved</h2>
+    <img class="section-img" src="https://scontent.fblr22-1.fna.fbcdn.net/v/t39.30808-6/492262467_1234099878715874_1931545224151549533_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=txWbBstD_bcQ7kNvwG8SVzK&_nc_oc=AdkfIYfxPcXOVxoAQy4Gpzzk8caj0rR2FLMNvxWj-8bvm9K3GS-dyyWOnTx30dFVjzw&_nc_zt=23&_nc_ht=scontent.fblr22-1.fna&_nc_gid=K8Xyn6Nnn_l_pyp0fJ889g&oh=00_AfamgJUdM9hckr09VIWEOr59SD3r4-GMcViZ_69RK49BYw&oe=68C3708D" alt="Kids with Art Supplies">
+    <p>
+      🌈 Donate extra art supplies <br>
+      ✨ Volunteer for fun classes <br>
+      🎨 Share your passion for creativity
+    </p>
+    <a href="survey.html" target="_blank" class="cta">Take the Survey</a>
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Artnation | Made with ❤️ for creativity and community
+  </footer>
+
+  <script>
+    document.getElementById("shareBtn").addEventListener("click", function() {
+      const pageURL = window.location.href; // Will copy the live URL once hosted online
+      navigator.clipboard.writeText(pageURL).then(() => {
+        document.getElementById("shareMsg").textContent = "✅ Page URL copied to clipboard!";
+      }).catch(err => {
+        document.getElementById("shareMsg").textContent = "❌ Failed to copy URL.";
+        console.error(err);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
